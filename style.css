@@ -11,7 +11,7 @@
 body {
   color: #383838;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 50px;
+  padding: 100px;
   background: linear-gradient(to bottom right, #3f5efb, #fc466b);
   height: 100vh;
 }
@@ -23,28 +23,35 @@ h1 {
 
 /* FLEXBOX CONTAINERS */
 
-.toast {
-  max-width: 500px;
-  border-radius: 25px;
-  /* box-shadow: 0 30px 80px 10px #00000033; */
+.toast__card {
+  /* border-radius: 4px; */
+  box-shadow: 0 30px 80px 10px #00000033;
+  box-shadow: 0 30px 80px 10px rgba(0,0,0,.2);
 
   display: flex;
+}
+
+.toast__img {
+  width: 100%;
+  height: 100%;
 }
 
 .toast__main {
   flex: 0 1 45%;
 }
 
-.toast__img {
-  width: 100%;
-}
-
 .toast__content {
+  flex: 0 1 50%;
   background: #fff;
+  width: auto;
+  height: auto;
 }
 
 .toast__price {
+  width: auto;
+  height: auto;
+  flex: 0 1 5%;
   color: #fff;
-  background: #3b3b3b9a;
+  background-color: #414141;
 }
 
